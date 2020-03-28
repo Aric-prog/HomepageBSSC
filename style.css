@@ -57,14 +57,14 @@ body::-webkit-scrollbar {
 
 .navBar .leftNavBarItem{
     height: 90%;
-    padding-left: 1.2vw;
+    padding-left: 0.5vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 .navBar .leftNavBarItem img{
-    height: 70%;
-    width : 70%;
+    height: 60%;
+    width : 60%;
     object-fit: cover;
 }
 
