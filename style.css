@@ -678,4 +678,12 @@ body::-webkit-scrollbar {
         background-color: rgba(255,255,255,0.2);
         text-align: center;
     }
+    .container .sponsorSection .sponsorBlock .sponsorOval .sponsorRow .sponsorItem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height : 10vw;
+        width : 10vw;
+        border-radius: 50%;
+    }
 }
