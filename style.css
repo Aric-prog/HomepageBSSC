@@ -1,0 +1,681 @@
+@font-face{
+    font-family : Norwester;
+    src : url(Assets/Norwester/norwester.otf) format("opentype")
+}
+
+body{
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.parallelogram{
+  width : 25%;
+  height : 100%;
+  transform: skew(80deg);
+  background-color: black;
+}
+
+.BSSCHeader{
+    width : 100%;
+    height : 100vh;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    background-image: url(Assets/082246800_1510217732-IMG-8713.jpg);
+    background-position : center;
+    background-size : cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+.navBar{
+    width : 100%;
+    height : 9vh;
+    font-size: 20px;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position : fixed;
+    z-index: 2;
+    top : 0px;
+}
+
+.navBar .leftNavBarItem{
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.navBar .leftNavBarItem img{
+    height: 80%;
+    width : 80%;
+    object-fit: cover;
+}
+
+.navBar .rightNavBarItem{
+    width : 35%;
+    height: 100%;
+    display: flex;
+    color : white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBar .rightNavBarItem #navBarMenus{
+    padding : 2px 7px;
+    border: grey;
+    border-style: solid;
+    border-radius: 3px;
+    height: 40%;
+    display: flex;
+    background-color:grey;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.navBar .rightNavBarItem #navBarMenus:hover{
+    color : black;
+    border:#F4B244;
+    border-style: solid;
+    border-radius: 10%;
+    background-color: #F4B244;
+}
+
+.BSSCHeader .mainLogo{
+    width : 100%;
+    height : 100%;
+    font-family : Norwester;
+    font-size: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+}
+
+.BSSCHeader .mainLogo img{
+    opacity : 95%;
+    margin-top : 15vh;
+    width : 60vh;
+    height : 60vh;
+    object-fit: cover;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.posterImg{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Assets/newPuzz.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height : 71vw;
+}
+.posterImg img{
+    opacity: 0.5;
+    object-fit: cover;
+    width: 100%;
+    height : 100%;
+}
+.posterImg .posterPartition{
+    width : 100%;
+    height : 50%;
+    display: flex;
+    flex-direction: row;
+}
+.posterImg .posterPartition .posterBSSCTitle{
+    height : 100%;
+    width : 50%;
+    font-size: 15vw;
+    color: white;
+    display: flex;
+    padding-left: 3vw;
+    align-items: flex-end;
+    font-family : Norwester;
+}
+.posterImg .posterPartition .visi{
+    font-family: Norwester;
+    font-size: 6vw;
+    padding-left: 20px;
+    height : 50%;
+    width : 50%;
+}
+.posterImg .posterPartition .misi{
+    float: right;
+    font-family: Norwester;
+    font-size: 6vw;
+    height : 100%;
+    width : 50%;
+    padding-left: 3vw;
+    padding-top: 2vw;  
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width : 100%;
+    background-color: grey;
+}
+.container .articleSection{
+    display: flex;
+    flex-direction: row;
+    
+    height : 40vw;
+    width: 100%;
+}
+
+.container .articleTitle{
+    height : 13vw;
+    width: 100%;
+    font-size: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(99,163,216);
+}
+.container .articleTitle .articleLine{
+    margin-top : 2vw;
+    width : 80%;
+    background-color: white;
+    height : 1vh;
+}
+
+.container .articleSection .articleBlock{
+    height : 100%;
+    width : 80%;
+    background-color: rgba(99,163,216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .articleSection .articleBlock2{
+    height : 100%;
+    background-color: rgba(99,163,216);
+    width : 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .articleSection .articleBlock .articleItem{
+    height : 36vw;
+    width : 25vw;
+    background-color: white;
+    border : black;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .articleSection .articleBlock2 .articleItem{
+    height : 36vw;
+    width : 25vw;
+    background-color: white;
+    border : black;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .articleSection .articleBlock .articleItem .articleImage{
+    height : 70%;
+    width : 100%;
+    background-color: grey;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .articleSection .articleBlock .articleItem .articleImage img{
+    height : 100%;
+    width : 100%;
+    transition: transform .2s;
+    object-fit: cover;
+}
+.container .articleSection .articleBlock .articleItem .articleImage img:hover{
+    transform: scale(1.2);
+}
+
+.container .articleSection .articleBlock2 .articleItem .articleImage{
+    height : 70%;
+    width : 100%;
+    background-color: grey;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .articleSection .articleBlock2 .articleItem .articleImage img{
+    height : 100%;
+    width : 100%;
+    transition: transform .2s;
+    object-fit: cover;
+}
+.container .articleSection .articleBlock2 .articleItem .articleImage img:hover{
+    transform: scale(1.2);
+}
+
+/* Sets up the parameters for the bottom text in one article item */
+.container .articleSection .articleBlock .articleItem .articleText{
+    line-height: 1.4;
+    font-size: 1.2vw;
+    margin: 10px;
+    text-align: justify;
+    height : 40%;
+    width : 95%;
+}
+
+/* Parameters for the bottom text of the second article */
+.container .articleSection .articleBlock2 .articleItem .articleText{
+    line-height: 1.4;
+    font-size: 1.2vw;
+    margin: 10px;
+    text-align: justify;
+    height : 40%;
+    width : 95%;
+}
+
+.container .cardSection{
+    font-size: 0;
+    width : 100%;
+    background-color: white;
+}
+.container .cardSection img{
+    object-fit: contain;
+    width: 100%;
+    height : 100%;
+}
+
+/* Wraps all of the sponsor section in this div */
+.container .sponsorSection{
+    display: flex;
+    flex-direction: column;
+    height : 60vw;
+    width : 100%;
+    background-color: rgba(173, 209, 75);
+}
+.container .sponsorSection .sponsorTitle{
+    height : 100px;
+    width : 100%;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .sponsorSection .sponsorBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width : 100%;
+}
+.container .sponsorSection .sponsorBlock .sponsorOval{
+    height : 90%;
+    width: 85%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sponsorSection .sponsorBlock .sponsorOval .sponsorRow{
+    height : 30%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container .sponsorSection .sponsorBlock .sponsorOval .sponsorRow .sponsorItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height : 12vw;
+    width : 12vw;
+    border-radius: 50%;
+}
+.container .sponsorSection .sponsorBlock .sponsorOval .sponsorRow .sponsorItem img{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container .aboutSection{
+    display: flex;
+    flex-direction: column;
+    height : 50vw;
+    width: 100%;
+    background-color: rgba(127, 93, 169);
+}
+.container .aboutSection .aboutBlock{
+    height : 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .aboutSection .aboutBlock .aboutOval{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height : 85%;
+    width: 85%;
+    
+    font-size : 2.1vw;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.container .aboutSection .aboutBlock .aboutOval .aboutText{
+    height : 60%;
+    width: 85%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height : 1.8;
+}
+
+.container .aboutSection .aboutBlock .aboutOval .aboutIcons{
+    height : 5vw;
+    width: 85%;
+    margin : 2vw 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .aboutSection .aboutBlock .aboutOval .aboutIcons img{
+    height : 100%;
+    margin: 0px 1vw;
+    object-fit: cover;
+}
+
+.slick-slide {
+    transform: scale(0.8);
+    margin : 1.5vw 1.5vw;
+}
+
+.slick-center {
+    display : block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.prev{
+    height : 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width : 10%;
+    background-color: rgba(99,163,216);
+}
+.prev img{
+    height: 10vw;
+    width: 10vw;
+    transform: rotate(90deg);
+    filter : invert(1);
+}
+.next{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width : 10%;
+    background-color: rgba(99,163,216);
+}
+.next img{
+    height: 10vw;
+    width: 10vw;
+    transform: rotate(270deg);
+    filter : invert(1);
+}
+
+.prev2{
+    height : 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width : 10%;
+    background-color: rgba(99,163,216);
+}
+.prev2 img{
+    height: 10vw;
+    width: 10vw;
+    transform: rotate(90deg);
+    filter : invert(1);
+}
+.next2{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width : 10%;
+    background-color: rgba(99,163,216);
+}
+.next2 img{
+    height: 10vw;
+    width: 10vw;
+    transform: rotate(270deg);
+    filter : invert(1);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    height : 10vw;
+    background-color: black;
+    color : white;
+    justify-content: center;
+    align-items: center;
+}
+.footer .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    height : 55%;
+    width : 100%;
+}
+
+.footer .icons .leftIcons{
+    height : 100%;
+    width : 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    filter: invert(100%)
+}
+.footer .icons .leftIcons img{
+    height: 2.5vw;
+    width: 2.5vw;
+    transition : 0.4s;
+}
+.footer .icons .leftIcons img:hover{
+    filter : contrast(30%);
+}
+
+.footer .icons .rightItems{
+    width : 37%;
+    height : 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer .icons .rightItems .elements{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color : white;
+    font-size : 1.5vw;
+}
+.footer .icons .rightItems .elements img{
+    height: 1.8vw;
+    width: 1.8vw;
+}
+
+.footer .copyright{
+    font-size : 2.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 45%;
+    width : 100%;
+}
+
+#emailIcon{
+    filter : invert(100%);
+    margin : 10px 10px;
+    margin-bottom : 4px;
+}
+
+#telephoneIcon{
+    filter : invert(100%);
+    margin : 10px 0px;
+    margin-left:13px;
+    margin-right:5px;
+    margin-bottom : 3px;
+}
+
+@media(max-width : 800px){
+    .container .articleSection{
+        display: flex;
+        flex-direction: row;    
+        
+        height : 90vw;
+        width: 100%;
+    }
+
+    .BSSCHeader .mainLogo img{
+        opacity : 95%;
+        margin-top : 15vh;
+        width : 60vh;
+        height : 60vh;
+        object-fit: scale-down;
+    }
+    .BSSCHeader .mainLogo{
+        width : 100%;
+        height : 100%;
+        font-family : Norwester;
+        font-size: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255,255,255,0.2);
+        text-align: center;
+    }
+    .container .articleTitle{
+        height : 13vw;
+        width: 100%;
+        font-size: 6vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgba(99,163,216);
+    }
+
+    .container .articleSection .articleBlock .articleItem{
+        height : 80vw;
+        width : 62vw;
+        background-color: white;
+        border : black;
+        border-style: solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container .articleSection .articleBlock2 .articleItem{
+        height : 80vw;
+        width : 62vw;
+        background-color: white;
+        border : black;
+        border-style: solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container .articleSection .articleBlock .articleItem .articleText{
+        line-height: 1.4;
+        font-size: 2.5vw;
+        margin: 10px;
+        text-align: justify;
+        height : 40%;
+        width : 95%;
+    }
+    
+    /* Parameters for the bottom text of the second article */
+    .container .articleSection .articleBlock2 .articleItem .articleText{
+        line-height: 1.4;
+        font-size: 2.5vw;
+        margin: 10px;
+        text-align: justify;
+        height : 40%;
+        width : 95%;
+    }
+    .slick-slide {
+        display: none;
+        transform: scale(0.8);
+    }
+    .slick-center {
+        display : none;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media(max-width : 500px){
+    .BSSCHeader .mainLogo img{
+        opacity : 95%;
+        margin-top : 15vh;
+        width : 40vh;
+        height : 40vh;
+        object-fit: scale-down;
+    }
+    .BSSCHeader .mainLogo{
+        width : 100%;
+        height : 100%;
+        font-family : Norwester;
+        font-size: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255,255,255,0.2);
+        text-align: center;
+    }
+}
