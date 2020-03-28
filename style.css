@@ -323,7 +323,7 @@ body::-webkit-scrollbar {
     background-color: rgba(173, 209, 75);
 }
 .container .sponsorSection .sponsorTitle{
-    height : 100px;
+    height : 15vw;
     width : 100%;
     font-size: 5vw;
     display: flex;
